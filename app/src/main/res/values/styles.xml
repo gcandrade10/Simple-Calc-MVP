@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Button">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">@dimen/_50</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_32</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="MiddleButton" parent="Button">
+        <item name="android:layout_marginStart">@dimen/_8</item>
+        <item name="android:layout_marginEnd">@dimen/_8</item>
+    </style>
+
 </resources>

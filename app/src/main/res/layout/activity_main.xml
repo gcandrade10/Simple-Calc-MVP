@@ -6,13 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/txtNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_200"
+        android:ems="10"
+        android:hint="@string/txt_number_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnSum"
+        style="@style/Button"
+        android:layout_marginStart="@dimen/_32"
+        android:layout_marginEnd="@dimen/_8"
+        android:text="@string/sum"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        style="@style/MiddleButton"
+        android:text="@string/subtract"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
+        app:layout_constraintStart_toEndOf="@+id/btnSum"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        style="@style/Button"
+        android:text="@string/multiply"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
+        app:layout_constraintStart_toEndOf="@+id/btnSubtract"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        style="@style/MiddleButton"
+        android:text="@string/divide"
+        app:layout_constraintEnd_toStartOf="@+id/btnEquals"
+        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <Button
+        android:id="@+id/btnEquals"
+        style="@style/Button"
+        android:layout_marginStart="@dimen/_8"
+        android:layout_marginEnd="@dimen/_32"
+        android:text="@string/equals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDivide"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply" />
 </androidx.constraintlayout.widget.ConstraintLayout>

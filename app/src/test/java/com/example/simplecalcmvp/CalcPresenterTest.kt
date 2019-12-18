@@ -1,5 +1,6 @@
 package com.example.simplecalcmvp
 
+import com.example.simplecalcmvp.CalcModel.Companion.SUM
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
@@ -27,10 +28,10 @@ class CalcPresenterTest {
         // Given
 
         // When
-        model.setFirstNumber(1, '+')
+        model.setFirstNumber(1, SUM)
 
         // Then
-        verify(model, times(1)).setFirstNumber(1, '+')
+        verify(model, times(1)).setFirstNumber(1, SUM)
     }
 
     @Test
