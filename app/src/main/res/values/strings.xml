@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Simple Calc MVP</string>
+    <string name="sum">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="equals">=</string>
+    <string name="reset">Reset</string>
+    <string name="txt_number_hint">Write a number</string>
 </resources>
